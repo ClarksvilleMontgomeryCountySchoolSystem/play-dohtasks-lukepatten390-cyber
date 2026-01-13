@@ -1,39 +1,28 @@
-
-"""
-ANSWER BOX - Copy the strings you need:
-
-"standing up or flopped down?"
-") Keep it round.\n"
-") Attach two pieces using {color2} hanging downward.\n"
-") Name this creation: "Dog""
-") Roll a smaller ball using {color1} for the head.\n"
-"hot dog or round like a ball?"
-") Roll a ball using {color1} for the body.\n"
-") Attach two pointed pieces using {color2} upright.\n"
-") Attach the head to the body.\n"
-") Add four legs using {color1}, a small tail using {color2}, two eyes, and a nose.\n"
-") Stretch it out.\n"
-"""
-
 def main():
-    color1 = "green"
-    color2 = "red"
-    print(f"1) Roll a ball using {color1} for the body.\n")
-    choice1 = input("hot dog or round like a ball? ")
-    if choice1 == "hot dog":
-        print("2) Stretch it out.\n")
+    color1 = "Coral"
+    color2 = "Teal"
+    print("1) Use {color2} to roll a ball.")
+    # Collect input. Use choice1 Prompt:"1, 2, or 3? "
+    choice1 = input("1, 2, or 3? ")
+    if choice1 == "1":
+        print("2) Make the ball flat.\n")
+    elif choice1 == "2": # elif is a second check only if the first check fails.
+        print("2) Form the ball into an egg shape.\n")
+    else: # else runs if all previous checks fail.
+        print("2) Keep it round.")
+    print("3) Use {color2} to roll two thin ropes.")
+    # Collect input. Use choice2 Prompt:"A or B? "
+    choice2 = input("A or B? ")
+    # Use the correct string.
+    # Remember you are checking equality to a string. You must use quotes.
+    if choice2 == "A":
+        print("4) Pinch off pieces of the thin ropes to make and attach spots.\n")
     else:
-        print("2) Keep it round.\n")
-    print(f"3) Roll a smaller ball using {color1} for the head.\n")
-    print("4) Attach the head to the body.\n")
-    choice2 = input("standing up or flopped down? ")
-    if choice2 == "standing up":
-        print(f"5) Attach two pointed pieces using {color2} upright.\n")
-    else:
-        print(f"5) Attach two pieces using {color2} hanging downward.\n")
-    print(f"6) Add four legs using {color1}, a small tail using {color2}, two eyes, and a nose.\n")
-    print("7) Name this creation: 'Dog'.")
-
+        print("4) Use the ropes to make stripes.\n")
+    print("5) Add two tiny dots for eyes on the front.")
+    choice3 = input()
+    print(f"6) Write {choice3} on the name card.")
 
 if __name__ == "__main__":
     main()
+
